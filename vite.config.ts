@@ -1,10 +1,12 @@
 import { defineConfig } from "vite";
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import vitePluginCompress from "./plugins/vite/vite-plugin-compress";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
 import { viteSingleFile } from "vite-plugin-singlefile";
 
 export default defineConfig({
 	plugins: [
+		cssInjectedByJsPlugin(),
 		// optimize: 1 time
 		vitePluginCompress(1),
 		// minify index.html in production

@@ -2749,6 +2749,7 @@ __metadata:
     typescript: ^4.6.4
     vite: ^3.0.7
     vite-node: ^0.21.1
+    vite-plugin-css-injected-by-js: ^2.0.3
     vite-plugin-minify: ^1.5.2
     vite-plugin-singlefile: ^0.11.1
     zip-a-folder: ^1.1.5
@@ -2766,6 +2767,15 @@ __metadata:
   bin:
     vite-node: vite-node.mjs
   checksum: c586e02ea024769bbc5febf97574b222b6729aef665bf3e0f4c0075434186d74810638322f31def2cde3502d4108e82fc826bd7c0a42ed48c5bae6ef0a05c2c4
+  languageName: node
+  linkType: hard
+
+"vite-plugin-css-injected-by-js@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "vite-plugin-css-injected-by-js@npm:2.0.3"
+  peerDependencies:
+    vite: ">2.0.0-0"
+  checksum: 7a630d0cecc937386e5f984ada987574facb8b014622748f445b3198c3f3b403ac1d9f46241728840773d151b8ecd709d89631aaee4eee292bdf2a33cd0b777c
   languageName: node
   linkType: hard
 
