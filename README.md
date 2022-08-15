@@ -25,9 +25,11 @@ Using Vite for bundle game js13kGames.
     	b() {}
     }
     ```
+  - CSS-in-JavaScript\
+    You can disable in [vite.config.ts](vite.config.ts#L9)
   - Compress JavaScript using [Roadroller](https://github.com/lifthrasiir/roadroller)
-  - Single `index.html`, inline JavaScript to `index.html`
-    You can disable in [vite.config.ts](vite.config.ts#L13)
+  - Single `index.html`, inline JavaScript to `index.html`\
+    You can disable in [vite.config.ts](vite.config.ts#L15)
 - ### Zip
   Zip `build` folder to `dist/game.zip` and check the zip size
   #### Tips
