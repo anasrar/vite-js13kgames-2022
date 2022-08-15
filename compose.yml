@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  ect:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    command: "/app/build/ect -9 -strip -zip /project/dist/game.zip"
+    volumes:
+      - ".:/project"
