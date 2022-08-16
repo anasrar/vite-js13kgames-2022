@@ -15,6 +15,7 @@
 		"@types/node": "^18.7.3",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
+		"ect-bin": "^1.4.1",
 		"eslint": "latest",
 		"prettier": "^2.7.1",
 		"roadroller": "^2.1.0",

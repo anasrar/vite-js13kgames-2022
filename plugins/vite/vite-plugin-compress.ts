@@ -1,7 +1,9 @@
+import { execFileSync } from "child_process";
 import { mkdirSync, statSync } from "fs";
 import { type PluginOption } from "vite";
 import { Packer } from "roadroller";
 import { zip } from "zip-a-folder";
+import ect from "ect-bin";
 
 export const checkBuildSize = () => {
 	const stats = statSync("./dist/game.zip");
@@ -12,7 +14,7 @@ export const checkBuildSize = () => {
 
 const vitePluginCompress = (O = 1): PluginOption => {
 	return {
-		name: "vite-plugin-roadroller",
+		name: "vite-plugin-compress",
 		enforce: "post",
 		apply: "build",
 		generateBundle: async (_, bundle) => {
@@ -45,6 +47,7 @@ const vitePluginCompress = (O = 1): PluginOption => {
 			await zip("./build", "./dist/game.zip", {
 				compression: 9,
 			});
+			execFileSync(ect as string, ["-9", "-strip", "-zip", "./dist/game.zip"]);
 
 			checkBuildSize();
 		},
