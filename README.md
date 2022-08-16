@@ -31,18 +31,7 @@ Using Vite for bundle game js13kGames.
   - Single `index.html`, inline JavaScript to `index.html`\
     You can disable in [vite.config.ts](vite.config.ts#L15)
 - ### Zip
-  Zip `build` folder to `dist/game.zip` and check the zip size
-  #### Tips
-  Use [Efficient Compression Tool](https://github.com/fhanau/Efficient-Compression-Tool) to reduce the zip file size, [Efficient Compression Tool](https://github.com/fhanau/Efficient-Compression-Tool) has prebuilt binary for Windows and macOS
-  #### Usage
-  ```bash
-  ./ect.exe -9 -strip -zip ./dist/game.zip
-  ```
-  #### Docker compose
-  You can use Docker and Docker Compose
-  ```bash
-  docker-compose up
-  ```
+  Zip `build` folder to `dist/game.zip`, optimize with [Efficient Compression Tool](https://github.com/fhanau/Efficient-Compression-Tool) and check the zip size
 
 ## Getting Started
 
@@ -51,73 +40,59 @@ Using Vite for bundle game js13kGames.
   git clone https://github.com/anasrar/vite-js13kgames-2022
   ```
 - ### Install Dependency
-  #### NPM
   ```bash
+  # NPM
   npm install
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn
   ```
 - ### Development
   Development server in [localhost:5173](http://localhost:5173)
-  #### NPM
   ```bash
+  # NPM
   npm run dev
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run dev
   ```
 - ### Build
   - `index.html` in `build` folder
   - `game.zip` in `dist` folder
-  #### NPM
   ```bash
+  # NPM
   npm run build
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run build
   ```
 - ### Preview
   Preview build server in [localhost:4173](http://localhost:4173)
-  #### NPM
   ```bash
+  # NPM
   npm run preview
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run preview
   ```
 
 ## Other Command
 
 - ### Check Zip Size
-  #### NPM
   ```bash
+  # NPM
   npm run check
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run check
   ```
 - ### ESLint
-  #### NPM
   ```bash
+  # NPM
   npm run lint
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run lint
   ```
 - ### Prettier
-  #### NPM
   ```bash
+  # NPM
   npm run format
-  ```
-  #### Yarn
-  ```bash
+  # Yarn
   yarn run format
   ```
 
